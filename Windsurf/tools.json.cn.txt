@@ -1,0 +1,20 @@
+browser_preview
+浏览器预览
+
+schema
+模式
+
+"The URL of the target web server to provide a browser preview for. This should contain the scheme (e.g. http:// or https://), domain (e.g. localhost or 127.0.0.1), and port (e.g. :8080) but no path."
+用于提供浏览器预览的目标 Web 服务器的 URL。此地址应包含协议（例如 http:// 或 https://）、域名（例如 localhost 或 127.0.0.1）和端口（例如 :8080），但不包含路径。
+
+"A short name 3-5 word name for the target web server. Should be title-cased e.g. 'Personal Website'. Format as a simple string, not as markdown; and please output the title directly, do not prefix it with 'Title:' or anything similar."
+目标 Web 服务器的简短名称，3-5 个词，采用标题格式，例如“个人网站”。作为简单字符串输出，不要添加“Title:”等前缀。
+
+"Spin up a browser preview for a web server. This allows the USER to interact with the web server normally as well as provide console logs and other information from the web server to Cascade. Note that this tool call will not automatically open the browser preview for the USER, they must click one of the provided buttons to open it in the browser."
+为 Web 服务器启动浏览器预览。这样可以让用户正常与 Web 服务器交互，并将控制台日志及其他信息提供给 Cascade。请注意，此工具调用不会自动为用户打开浏览器预览，用户必须点击提供的按钮之一，才能在浏览器中打开。
+
+check_deploy_status
+检查部署状态
+
+"Check the status of the deployment using its windsurf_deployment_id for a web application and determine if the application build has succeeded and whether it has been claimed. Do not run this unless asked by the user. It must only be run after a deploy_web_app tool call."
+使用 windsurf_deployment_id 检查 Web 应用的部署状态，并判断应用构建是否成功及其是否已被认领。除非用户请求，否则不要运行此工具。只能在调用 deploy_web_app 工具之后再运行。
